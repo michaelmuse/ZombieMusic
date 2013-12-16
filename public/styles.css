@@ -1,0 +1,126 @@
+a:link {
+  COLOR: #5DC8CD;
+}
+
+a:visited {
+  COLOR: #5DC8CD;
+}
+
+a:hover {
+  COLOR: #FF0000;
+}
+
+a:active {
+  COLOR: #5DC8CD;
+}
+
+body {
+  padding: 30px;
+  background-image: url('http://zombieapocalypseacademy.org/wp-content/uploads/2011/12/wallpaper-173930.jpg');
+  background-size: 100%;
+  color: white;
+}
+
+input {
+  padding: 10px;
+}
+
+input[type="submit"] {
+  background-color: #1C5A3F;
+  color: white;
+}
+
+ul {
+  list-style: none;
+}
+
+.logo {
+  /*---------ALT FONTS------------ 
+
+  font-family: 'Akronim', cursive;
+  font-family: 'Frijole', cursive; 
+  */
+
+  font-family: 'Amatic SC', cursive;
+  font-size: 50px;
+  font-weight: 800;
+  color: #5DC8CD  ;
+  margin: 10px 0px;
+
+  /*Fades in the site logo */
+  /*Repeted code allows for browser compatability */
+  -webkit-animation: fadein 3s; /* Safari and Chrome */
+    -moz-animation: fadein 3s; /* Firefox */
+    -ms-animation: fadein 3s; /* Internet Explorer */
+    -o-animation: fadein 3s; /* Opera */
+    animation: fadein 3s;
+}
+
+.brains {
+  /*---------ALT FONTS------------ 
+
+  font-family: 'Akronim', cursive;
+  font-family: 'Frijole', cursive; 
+  */
+
+  font-family: 'Amatic SC', cursive;
+  font-size: 50px;
+  font-weight: 600;
+  color: red;
+  margin: 10px 0px;
+
+  /*Fades in the site logo */
+  /*Repeted code allows for browser compatability */
+  -webkit-animation: fadein 10s; /* Safari and Chrome */
+    -moz-animation: fadein 10s; /* Firefox */
+    -ms-animation: fadein 10s; /* Internet Explorer */
+    -o-animation: fadein 10s; /* Opera */
+    animation: fadein 10s;
+}
+
+.artist_name {
+  font-family: 'Amatic SC', cursive;
+  font-size: 40px;
+}
+
+/*Logo fade in weight. browser compatability code. */ 
+    @keyframes fadein {
+            from { opacity: 0; }
+            to   { opacity: 1; }
+        }
+
+        /* Firefox */
+        @-moz-keyframes fadein {
+            from { opacity: 0; }
+            to   { opacity: 1; }
+        }
+
+        /* Safari and Chrome */
+        @-webkit-keyframes fadein {
+            from { opacity: 0; }
+            to   { opacity: 1; }
+        }
+
+        /* Internet Explorer */
+        @-ms-keyframes fadein {
+            from { opacity: 0; }
+            to   { opacity: 1; }
+        }​
+
+        /* Opera */
+        @-o-keyframes fadein {
+            from { opacity: 0; }
+            to   { opacity: 1; }
+        }​
+
+/*=====================================BOOKMARK===============================================
+Starting to build app's look and feel. Going to start with the home page, then move onto the 
+artist's page.
+
+GOALS: 
+1. Create a pleasing, unique, clean, cool, visual style.
+2. Design and build site's homepage.
+
+TO DO:
+1. Choose a font for site's name. 
+=============================================================================================*/

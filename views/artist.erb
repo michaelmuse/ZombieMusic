@@ -1,0 +1,40 @@
+<h2>
+  <img src="<%= @artist_1["artist"]["image"][3]["#text"] %>" /><span class="artist_name"><span class="brains">Zombie</span> <%= @artist_1["artist"]["name"] %></span>
+</h2>
+ 
+<br>
+<%= @embed_player_html %>
+<br>
+ 
+<h4>Top Albums</h4>
+  <table>
+    <tbody>
+      <tc>
+        <% i = 0 %>
+        <% while i < 5 %>
+          <td><a href="<%= @artist_1_albums["topalbums"]["album"][i]["url"] %>"><img src="<%= @artist_1_albums["topalbums"]["album"][i]["image"][2]["#text"] %>"></a></td>
+        <% i += 1 %>
+      </tc>
+        <% end %>
+    </tbody>
+  </table>
+ 
+<h4>Top 10 Zombie.FM Tracks</h4>    
+  <ol>
+    <% i = 0 %>
+    <% while i < 10 %>
+      <li><a href="<%= @artist_1_top_tracks["toptracks"]["track"][i]["url"] %>"><%= @artist_1_top_tracks["toptracks"]["track"][i]["name"] %></a></li>
+    <% i += 1 %>
+    <% end %>
+  </ol>
+
+<h4>Oppurtunities to get eaten by <%= @artist_1["artist"]["name"]%>:</h4>  
+  <ul>
+    <% i = 0 %>
+    <% while i < 10 && @events["events"]["event"][i]!= nil%>
+      <li><a href="<%= @events["events"]["event"][i]["url"]%>"><%= @events["events"]["event"][i]["venue"]["location"]["city"]%> - <%= @events["events"]["event"][i]["venue"]["name"] %></a></li>
+      <% i += 1 %>
+    <% end %>
+  </ul>
+ 
+<a href= '/'>Back to Search</a>
